@@ -6,29 +6,28 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    // This size provide us total height and width  of our screen
     return Scaffold(
       body: Container(
         height: size.height,
-        // it will take full width
         width: size.width,
+        padding: EdgeInsets.only(left: 0, top: 30, right: 0, bottom: 0),
         decoration: BoxDecoration(
           image: DecorationImage(
             image: AssetImage("assets/images/bg.png"),
             fit: BoxFit.cover,
+            alignment: FractionalOffset(0.8, 0.5),
           ),
         ),
+
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
+          //  SizedBox(height: 60),
             CustomAppBar(),
-            Spacer(),
-            // It will cover 1/3 of free spaces
             Body(),
             Spacer(
               flex: 2,
             ),
-            // it will cover 2/3 of free spaces
           ],
         ),
       ),

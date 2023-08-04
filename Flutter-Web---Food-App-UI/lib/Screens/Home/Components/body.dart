@@ -12,22 +12,18 @@ class Body extends StatelessWidget {
           Text(
             "Burger".toUpperCase(),
             style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                  color: kTextcolor,
-                  fontWeight: FontWeight.bold,
-                ),
-          ),
-          Text(
-            "Lorem ipsum dolor sit amet, consectetur \nadipiscing elit, sed do eiusmod tempor \nincididunt ut labor",
-            style: TextStyle(
-              fontSize: 21,
-              color: kTextcolor.withOpacity(0.34),
+              color: kPrimaryColor,
+              fontWeight: FontWeight.bold,
+              fontSize: 68, // Thay đổi giá trị fontSize ở đây
             ),
           ),
+          SizedBox(height: 600),
+
           FittedBox(
             // Now it just take the required spaces
             child: Container(
               margin: EdgeInsets.symmetric(vertical: 20),
-              padding: EdgeInsets.all(15),
+              padding: EdgeInsets.all(10),
               decoration: BoxDecoration(
                 color: Color(0xFF372930),
                 borderRadius: BorderRadius.circular(34),
@@ -55,7 +51,7 @@ class Body extends StatelessWidget {
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
-                      fontSize: 19,
+                      fontSize: 16,
                     ),
                   ),
                   SizedBox(width: 15),

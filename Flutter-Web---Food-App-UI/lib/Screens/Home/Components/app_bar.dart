@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-
-
 import 'menu_item.dart';
 
 class CustomAppBar extends StatelessWidget {
@@ -8,7 +6,7 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.all(20),
-      padding: EdgeInsets.all(20),
+      padding: EdgeInsets.all(10),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(46),
@@ -20,26 +18,26 @@ class CustomAppBar extends StatelessWidget {
           ),
         ],
       ),
-      
+
       child: Row(
         children: <Widget>[
           Image.asset(
             "assets/images/logo.png",
-            height: 25,
+            height: 20,
             alignment: Alignment.topCenter,
           ),
           SizedBox(width: 5),
           Text(
             "Foodi".toUpperCase(),
-            style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           ),
-          Spacer(),
+          //Spacer(),
           MenuItem(
             title: "Home",
             press: () {},
           ),
           MenuItem(
-            title: "about",
+            title: "About",
             press: () {},
           ),
         ],

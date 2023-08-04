@@ -1,3 +1,8 @@
+// ignore: file_names
+// ignore: file_names
+// ignore: file_names
+// ignore_for_file: constant_identifier_names, file_names, duplicate_ignore
+
 enum ChatMessageType { text, audio, image, video }
 enum MessageStatus { not_sent, not_view, viewed }
 
